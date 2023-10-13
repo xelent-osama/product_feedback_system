@@ -40,9 +40,7 @@ class FeedbackController extends Controller
 
         $email = Auth::user()->email;
 
-
-//        Event::dispatch(new FeedbackCreated($email));
-
+        Event::dispatch(new FeedbackCreated($email));
         event(new FeedbackNotification());
         return $this->apiSuccessResponse(new FeedbackResource($data), 'Feedback Save Successfully!');
     }
