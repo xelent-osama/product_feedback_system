@@ -1,0 +1,15 @@
+﻿body {
+}
+.tag-blue {
+    background-color: #fff;
+    color: black;
+    font-weight:bold;
+}
+.tag-green {
+     background-color: #fff;
+    color: black;
+    font-weight:bold;
+}
+.button {
+    display:none;
+}
